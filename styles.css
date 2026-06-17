@@ -116,11 +116,17 @@ p {
 }
 
 header, main, footer {
-    width: 100%;
-    
+    width: 100%;    
 }
 
-main {
-   
-   padding: 20px;
+main { 
+   padding: 30px;
+}
+
+header{
+    padding: 40px 30px;
+}
+
+footer {
+     padding: 20px 30px;
 }
