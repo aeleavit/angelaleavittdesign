@@ -73,9 +73,6 @@ body.darkMode {
 }
 
 
-
-
-
 h1, h2, h3, h4 {
     font-family: var(--heading-fonts);
     font-weight: 600;
@@ -185,7 +182,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 20px;  
 }
 
 nav a {
@@ -194,42 +191,29 @@ nav a {
     color: inherit;
 }
 
+nav a:hover {
+    text-decoration: underline;
+
+}
+
 /* Hero Styles */
 .video-section {
     text-align: center;
     position: relative;
-    height: 600px;
+    height: 560px;
     overflow: hidden; 
+    margin-bottom: 60px;
 }
 
 .hero-video {
     display: block;
     width: 100%;
     height: auto; 
-    margin: 0 auto;
-}
-/*
-#hero h2
-#hero  h3 {
-    position: absolute;   
-} 
- 
-#hero h2 {
-    margin-top: 30px;
-    margin-left: 60px;
-}
+}   
 
-#hero h3 {
-    margin-top: 20px;
-   
-    margin-left: 30rem;
-   
-} */
-    
-
+/* About */
 #about {
     text-align: center;
-     margin: 0 30px;
 }
 
 #about h2 {
@@ -239,8 +223,69 @@ nav a {
 
 #about p {
     margin-top: 30px;
-    margin-bottom: 10px;
-    
+    margin: 30px auto 10px; 
 }
 
+
+/* Handbags Styles */
+
+#handbags {
+   align-items: center; 
+}
+
+.handbaggrid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 700px;  
+    margin: 30px auto 10px; 
+}
+
+#handbags h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;  
+}
+
+#handbagImg {
+    display: block;
+    width: 350px;
+    height: auto;
+    margin: 20px auto;   
+}
+
+#handbagName, 
+#handbagDescriptionMod {
+    display: block;
+    text-align: left;
+    max-width: 300px;
+}
+
+#handbagName {
+     margin: 20px auto; 
+}
+
+#handbagDescriptionMod {
+     margin: 5px auto; 
+}
+/* Handbags Buttons Styles */
+.buttons  {
+    display: block;
+    text-align: center;
+    margin: 30px 30px 20px 40px;
+    gap: 20px;
+   
+} 
+
+.buttons button {
+    border: none;
+    padding: 0;
+    font: inherit;
+    background: none;  
+}
+
+.buttons button:hover {
+    text-decoration: underline;
+
+}
+    
 
