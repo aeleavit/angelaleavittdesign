@@ -208,24 +208,28 @@ nav a {
     height: auto; 
     margin: 0 auto;
 }
-
+/*
 #hero h2
 #hero  h3 {
     position: absolute;   
 } 
-
+ 
 #hero h2 {
     margin-top: 30px;
+    margin-left: 60px;
 }
 
 #hero h3 {
     margin-top: 20px;
-    text-align: center;
-} 
+   
+    margin-left: 30rem;
+   
+} */
     
 
 #about {
     text-align: center;
+     margin: 0 30px;
 }
 
 #about h2 {
