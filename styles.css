@@ -275,7 +275,6 @@ nav a:hover {
     margin: 30px auto;
     gap: 30px;
     max-width: 700px;
-   
 } 
 
 .buttons button {
@@ -283,11 +282,56 @@ nav a:hover {
     padding: 0;
     font: inherit;
     background: none;  
+    margin: 10px auto 10px; 
 }
 
 .buttons button:hover {
     text-decoration: underline;
-
+    cursor: pointer;
 }
-    
 
+/* Play & Win Styles */
+
+#game {
+    margin-top: 40px;
+    align-items: center;  
+    color: #f5f5f5 ;
+    background-color:darkmagenta;
+    padding-top: 1%;
+    max-width: 1280px;
+}
+
+#game h2, p {
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 700px; 
+    margin: 10px 0 20px 20px;
+}
+
+.inputNumbers {
+    text-align: left;
+    margin: 30px 0 20px 20px;
+}
+
+#playGameBut {
+    font-family: var(--heading-fonts);
+    font-weight: 600;
+    padding: 3px 6px;
+    background-color:aquamarine;
+    border: none;
+    width: 100px;
+    border-radius: 7px;
+    
+}
+
+.inputNumbers #playGameBut:hover {
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 0 #1c1b1b
+}
+
+.inputNumbers #playGameBut:active {
+    box-shadow: 0 0 0 #1c1b1b;
+
+}    
