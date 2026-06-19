@@ -240,6 +240,20 @@ nav a:hover {
     margin: 30px auto 10px; 
 }
 
+.handbaggrid ul{
+    list-style: none;
+    padding-left: 28px;
+    margin-top: 15px;
+}
+
+.handbaggrid li {
+    margin-top: 10px;
+    font-size:smaller;
+     
+}
+
+
+
 #handbags h2 {
     text-align: center;
     margin-top: 40px;
@@ -382,12 +396,12 @@ nav a:hover {
     padding: .5rem;
 
 }
+
 /* Left side of grid */
 
 #contactForm label[for="comments"] {
     padding: .5rem;
     align-items: center; 
-   
 }
  
 #comments {
@@ -412,5 +426,25 @@ fieldset {
 
 .form-bottom legend {
     margin-bottom: 10px;
+}
+
+button[type="submit"]{
+    font-family: var(--heading-fonts);
+    font-weight: 600;
+    padding: 3px 6px;
+    background-color:aquamarine;
+    border: none;
+    width: 100px;
+    border-radius: 7px;
+}
+
+button[type="submit"]:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 0 #1c1b1b
+}
+
+button[type="submit"]:active {
+     box-shadow: 0 0 0 #1c1b1b;
 }
 
