@@ -100,23 +100,41 @@
             <section id="contact">  <!--Contact Section-->
                 <h2>Contact Us</h2>
 
-                <p>Interest in a custom handbag design? Complete the form below.</p>
+                <p class="contact-intro">Interest in a custom handbag design? Complete the form below.</p>
 
                 <form id="contactForm">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName">
+                    <div class="form-top">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
 
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
 
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber">
 
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
 
-                    <label for="comments">Comments</label>
-                    <input type="text" id="comments" name="comments">
+                    <div class="form-bottom">
+                        <fieldset>
+                            <legend>Preferred Contact Method</legend>
+
+                            <div class="radio-button">
+                                <input type="radio" id="pref-email" name="contact-method" value="email" required><label for="pref-email">Email</label>
+                            </div>
+
+                            <div class="radio-button">
+                                <input type="radio" id="pref-phone" name="contact-method" value="phone" required><label for="pref-phone">Phone</label>
+                            </div>
+                        </fieldset>
+
+                        <label for="comments">Comments</label>
+                        <input type="text" id="comments" name="comments">
+
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
 
             </section>      

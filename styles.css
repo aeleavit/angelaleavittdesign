@@ -335,3 +335,18 @@ nav a:hover {
     box-shadow: 0 0 0 #1c1b1b;
 
 }    
+
+/* Contact Styles */
+
+#contact {
+    margin-top: 40px;  
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+.contact-intro {
+     text-align: center;
+
+}
