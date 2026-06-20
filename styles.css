@@ -71,7 +71,9 @@ body.darkMode {
     background-color: #2a2a2a; 
 }
 
+
 #darkMode {
+    margin-top: 10px;
     font-size: 2rem;
     border: none;
     cursor: pointer;
@@ -95,8 +97,7 @@ h1 {
 h2 {
     font-size: 2.25rem;
     letter-spacing: 0.55rem;
-    margin: 0.75px 0;
-  /*  text-align: center; */
+    margin: 0.75px 0; 
 }
 
 h3 {
@@ -117,7 +118,7 @@ p {
     line-height: 1.6;
 }
 
-#fixed {
+.fixed {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -135,9 +136,15 @@ main {
 
 footer {
      padding: 20px 30px; 
-     background-color: #ffffff;
-     
+     background-color: #ffffff;     
 } 
+
+
+/* Dark Mode to include footer*/
+body.darkMode footer {
+    color: #f5f5f5 ;
+    background-color: #2a2a2a; 
+}
 
 /* Link Styles */
 a {
@@ -483,4 +490,17 @@ footer p {
     width: 100%;
     text-align: center;
     margin: 0;
+}
+
+ooter {
+     padding: 20px 30px; 
+     background-color: #ffffff;     
+} 
+
+
+/* Dark Mode to include footer*/
+body.darkMode footer {
+    color: #f5f5f5 ;
+    background-color: #373333; 
+
 }
