@@ -414,7 +414,7 @@ body.darkMode .buttons button  {
 .form-top input,
 .form-bottom textarea
  {
-    width: 100%;
+    
     box-sizing: border-box;
     padding: .5rem;
 

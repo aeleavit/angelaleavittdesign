@@ -15,16 +15,24 @@ function validateForm (e) {
     //add input and store as variable
     let firstNameInput = document.getElementById("firstName"); 
     let lastNameInput = document.getElementById("lastName");
+    let commentsInput = document.getElementById("comments");
+    
     let phoneNumberInput = document.getElementById("phoneNumber");
     let emailInput = document.getElementById("email");
-    let commentsInput = document.getElementById("comments");
+    
+    // radio button
+    let radioButInput = document.getElementById("radioBut"); 
 
     //span display error message
     let firstNameErrorSpan = firstNameInput.previousElementSibling;
     let lastNameErrorSpan = lastNameInput.previousElementSibling;
+    let commentsErrorSpan = commentsInput.previousElementSibling;
+
+
     let phoneNumberErrorSpan = phoneNumberInput.previousElementSibling;
     let emailErrorSpan = emailInput.previousElementSibling;
-    let commentsErrorSpan = commentsInput.previousElementSibling;
+    
+   // let radioButErrorSpan = commentsErrorInput.parentElementSibling; //radio button
     
 
     //paragraph to display error message to user
@@ -37,7 +45,7 @@ function validateForm (e) {
     emailErrorSpan.innerHTML = "";
     commentsErrorSpan.innerHTML = "";
 
-    outputP.innerHTML = "";
+  //  outputP.innerHTML = "";
 
     if(firstNameInput.value === ""){
         firstNameErrorSpan.innerHTML = "Please enter your first name";
@@ -47,17 +55,21 @@ function validateForm (e) {
         lastNameErrorSpan.innerHTML = "Please enter your last name";
     }
 
+    if(commentsInput.value === "") {
+        commentsErrorSpan.innerHTML = "Please enter your comment"
+    }
+
+    
+
     if(phoneNumberInput.value === "") {
         phoneNumberErrorSpan.innerHTML = "Please enter your phone number or email";
     }
 
     if(emailInput.value === "") {
-        emailErrorSpan.innerHTML = "Please enter your email or phone number"
-    }
+        emailErrorSpan.innerHTML = "Please enter your email or phone number";
+    } 
     
-    if(commentsInput.value === "") {
-        commentsErrorSpan = "Please enter your comment"
-    }
+    
     
     
     else{
@@ -74,8 +86,40 @@ function validateForm (e) {
 
 }
 
+//radio buttons
+
+let radio = document.querySelectorAll("#radioButtons input[type = 'radio']");
+
+//create an array
+
+let contact = [];
+
+//function
+function contactList(e) {
+
+// show picked choice comment TO DO ADD P
+let radioP = document.querySelector("#radioButtons p");
+
+//empty string
+let output = "";
+
+//which radio button was click
+let currentRadio = e.target;
+
+//True or False
+if(currentRadio.checked){
+    if(contact.indexOf(currentRadio.value) === -1) {
+        radio.push()
+
+    }
+
+}
 
 
+
+
+
+}
 
 
 
@@ -88,9 +132,13 @@ function validateForm (e) {
 
 
 
-
 // Event handlers dark mode
 document.getElementById("darkMode").addEventListener("click", hideDarkMode);
 
 //Event Handler to validate form
 document.getElementById("submitBut").addEventListener("click", validateForm);
+
+//Event Handlers for radio buttons
+for (let radio of radiobuttons){
+        radio.addEventListener("change", contactList);
+}
