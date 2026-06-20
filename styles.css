@@ -57,6 +57,10 @@ table {
 
 --body-fonts:  "IBM Plex Sans", sans-serif;
 
+/*Shadows */
+    --lg-shadow: -6px 6px 12px var #372222;
+    --sm-shadow: -3px 3px 6px var #372222;
+
 }
 
 body {

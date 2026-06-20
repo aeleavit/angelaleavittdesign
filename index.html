@@ -120,38 +120,41 @@
 
                 <form id="contactForm">
                     <div class="form-top">
-                        <label for="firstName">First Name</label>
+                        <label for="firstName">First Name</label><span></span>
                         <input type="text" id="firstName" name="firstName">
 
-                        <label for="lastName">Last Name</label>
+                        <label for="lastName">Last Name</label><span></span>
                         <input type="text" id="lastName" name="lastName">
 
-                        <label for="phoneNumber">Phone Number</label>
+                        <label for="phoneNumber">Phone Number</label><span></span>
                         <input type="tel" id="phoneNumber" name="phoneNumber">
 
-                        <label for="email">Email</label>
+                        <label for="email">Email</label><span></span>
                         <input type="text" id="email" name="email">
                     </div>
 
                     <div class="form-bottom">
                         <fieldset>
                             <legend>Preferred Contact Method</legend>
+                            <span id= "radioButError"></span>
 
-                            <div class="radio-button">
-                                <input type="radio" id="pref-email" name="contact-method" value="email" required><label for="pref-email">Email</label>
-                            </div>
+                                <div class="radio-button">
+                                    <input type="radio" id="pref-email" name="contact-method" value="email" required><label for="pref-email">Email</label>
+                                </div>
 
-                            <div class="radio-button">
-                                <input type="radio" id="pref-phone" name="contact-method" value="phone" required><label for="pref-phone">Phone</label>
-                            </div>
+                                <div class="radio-button">
+                                    <input type="radio" id="pref-phone" name="contact-method" value="phone" required><label for="pref-phone">Phone</label>
+                                </div>
+
                         </fieldset>
 
-                        <label for="comments">Comments</label>
+                        <label for="comments">Comments</label><span></span>
                         <input type="text" id="comments" name="comments">
 
-                        <button type="submit">Submit</button>
+                        <button id="submitBut" type="submit">Submit</button>
                     </div>
                 </form>
+                <p id="defaultOutput"></p>
 
             </section>      
         </main>
