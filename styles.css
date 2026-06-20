@@ -318,6 +318,11 @@ nav a:hover {
     cursor: pointer;
 }
 
+/* Dark Mode*/
+body.darkMode .buttons button  {
+    color: #f5f5f5 ;
+}
+
 /* Play & Win Styles */
 
 #game {
