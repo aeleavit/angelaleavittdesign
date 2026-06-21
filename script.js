@@ -9,10 +9,11 @@ function hideDarkMode(){
 }
 
 // Product Switcher
-// map data to display handbags
+// To store handbag images, alt text, name, description, and arrays used to store details for the product switcher
 let handbagsContent = {
     goMod: {
         photo: "images/gomod1.jpeg",
+        alt: "Wooden pyramid-shaped handbag with bright colors and a women's face.",
         name: "Go Mod",
         description: "The Go Mod handbag is a one-of-a-kind designed using a repurposed vintage dress.",
         details: [
@@ -25,6 +26,7 @@ let handbagsContent = {
 
     cherylAnne: {
         photo: "images/cherylanne.jpeg",
+        alt: "Wooden pyramid-shaped handbag with an image of lady with a light pink background and lucite handle",
         name: "Cheryl Anne",
         description: "The Cheryl Anne handbag is one of our most popular handbags embellished with swarovski crystals.",
         details: [
@@ -36,7 +38,8 @@ let handbagsContent = {
     },
 
     amy: {
-        photo: images/"amy.jpeg",
+        photo: "images/amy.jpeg",
+        alt: "Wooden pyramid-shaped handbag with an image of lady and beaded flowers with a black background and a lucite handle",
         name: "Amy",
         description: "Eye-stopping Amy handbag is hand-beaded embellished with swarovski crystals.",
         details: [
@@ -48,7 +51,8 @@ let handbagsContent = {
     },
 
     sunBathingBeauties: {
-        photos: images/"sunbathing.jpg",
+        photos: "images/sunbathing.jpg",
+        alt: "Wooden pyramid-shaped handbag with an image of pin-up girl's in bathing suites and beaded flowers with a brown background and a bamboo handle",
         name: "Sun Bathing Beauties",
         description: "Ready for the summer? The Sun Bathing Beauties bag is embellished with swarovski crystals.",
         details: [
@@ -60,8 +64,9 @@ let handbagsContent = {
     },
 
     betsy: {
-        photos: images/"betsy.jpeg",
+        photos: "images/betsy.jpeg",
         name: "Betsy",
+        alt: "Wooden pyramid-shaped handbag with an image of pin-up girl's in marching band outfits with a navy blue background and a lucite handle",
         description: "This blue bag is perfect with any outfit and is perfect for your 4th of July accessory. This bag is embellished with swarovski crystals.",
         details: [
             "11' Width x 8' Height x 2 1/4' Depth",
@@ -72,8 +77,9 @@ let handbagsContent = {
     },
 
     Verycherry: {
-        photos: images/"verrycherry.jpeg",
+        photos: "images/verrycherry.jpeg",
         name: "Very Cherry",
+        alt:  "Wooden rectangular-shaped handbag painted black with green stems and rhinestones for the cherries and a black beaded handle.",
         description: "Very Cherry was among the most exclusive designs in the Angela Leavitt collection, distinguished by its hand-painted artwork and limited availability.",
         details: [
             "10 1/2' Width x 6' Height x 2 1/4' Depth",
@@ -82,10 +88,8 @@ let handbagsContent = {
             "Lined inside and includes mirror",
 
         ]
-
-    }   
-
-}
+    }  
+};
 
  
 
