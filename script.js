@@ -8,6 +8,96 @@ function hideDarkMode(){
     document.querySelector("body").classList.toggle("darkMode");
 }
 
+// Product Switcher
+// map data to display handbags
+let handbagsContent = {
+    goMod: {
+        photo: "images/gomod1.jpeg",
+        name: "Go Mod",
+        description: "The Go Mod handbag is a one-of-a-kind designed using a repurposed vintage dress.",
+        details: [
+            "11' Width x 8' Height x 2 1/4' Depth",
+            "Wood box construction with lucite handle",
+            "Front and back design",
+            "Lined inside and includes mirror",
+        ]              
+    },
+
+    cherylAnne: {
+        photo: "images/cherylanne.jpeg",
+        name: "Cheryl Anne",
+        description: "The Cheryl Anne handbag is one of our most popular handbags embellished with swarovski crystals.",
+        details: [
+            "7 3/4' width x 8' Height x 2 3/4' Depth",
+            "Wood box construction with lucite handle",
+            "Front and back design",
+            "Lined inside and includes mirror",
+        ]
+    },
+
+    amy: {
+        photo: images/"amy.jpeg",
+        name: "Amy",
+        description: "Eye-stopping Amy handbag is hand-beaded embellished with swarovski crystals.",
+        details: [
+            "11' Width x 8' Height x 2 1/4' Depth",
+            "Wood box construction with lucite handle",
+            "Front and back design",
+            "Lined inside and includes mirror",
+        ]
+    },
+
+    sunBathingBeauties: {
+        photos: images/"sunbathing.jpg",
+        name: "Sun Bathing Beauties",
+        description: "Ready for the summer? The Sun Bathing Beauties bag is embellished with swarovski crystals.",
+        details: [
+            "11' Width x 8' Height x 2 1/4' Depth",
+            "Wood box construction with a bamboo handle",
+            "Front and back design",
+            "Lined inside and includes mirror",
+        ]  
+    },
+
+    betsy: {
+        photos: images/"betsy.jpeg",
+        name: "Betsy",
+        description: "This blue bag is perfect with any outfit and is perfect for your 4th of July accessory. This bag is embellished with swarovski crystals.",
+        details: [
+            "11' Width x 8' Height x 2 1/4' Depth",
+            "Wood box construction with lucite handle",
+            "Front and back design",
+            "Lined inside and includes mirror",
+        ]
+    },
+
+    Verycherry: {
+        photos: images/"verrycherry.jpeg",
+        name: "Very Cherry",
+        description: "Very Cherry was among the most exclusive designs in the Angela Leavitt collection, distinguished by its hand-painted artwork and limited availability.",
+        details: [
+            "10 1/2' Width x 6' Height x 2 1/4' Depth",
+            "Wood box construction with black beaded handle",
+            "Front and back design",
+            "Lined inside and includes mirror",
+
+        ]
+
+    }   
+
+}
+
+ 
+
+//Guessing Game
+let game = {
+    winner:{
+
+    }
+}
+
+
+
 //contact forms prevent default form submission
 function validateForm (e) {
 // prevent default form submission
@@ -121,7 +211,6 @@ function validateForm (e) {
 
 
  
-
 
 
 
