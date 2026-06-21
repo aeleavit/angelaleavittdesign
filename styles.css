@@ -286,7 +286,7 @@ nav a:hover {
 }
 
 #handbagName, 
-#handbagDescriptionMod {
+#handbagDescriptionMod, #handbagDetails {
     display: block;
     text-align: left;
     max-width: 300px;

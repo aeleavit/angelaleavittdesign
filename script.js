@@ -51,7 +51,7 @@ let handbagsContent = {
     },
 
     sunBathingBeauties: {
-        photo: "images/sunbathing.jpg",
+        photo: "images/sunbathing.jpeg",
         alt: "Wooden pyramid-shaped handbag with an image of pin-up girl's in bathing suites and beaded flowers with a brown background and a bamboo handle",
         name: "Sun Bathing Beauties",
         description: "Ready for the summer? The Sun Bathing Beauties bag is embellished with swarovski crystals.",
@@ -77,7 +77,7 @@ let handbagsContent = {
     },
 
     veryCherry: {
-        photo: "images/verrycherry.jpeg",
+        photo: "images/verycherry.jpeg",
         name: "Very Cherry",
         alt:  "Wooden rectangular-shaped handbag painted black with green stems and rhinestones for the cherries and a black beaded handle.",
         description: "Very Cherry was among the most exclusive designs in the Angela Leavitt collection, distinguished by its hand-painted artwork and limited availability.",
@@ -92,22 +92,26 @@ let handbagsContent = {
 };
 
 // function that will load the handbag content for handbag section 
-function loadhandbagContent() {
-    document.getElementById("handbagImg").src = handbagsContent.photo;
+function loadHandbagContent(handbag) {
+    document.getElementById("handbagImg").src = handbag.photo;
 
-    document.getElementById("handbagImg").alt = handbagsContent.alt;
+    document.getElementById("handbagImg").alt = handbag.alt;
     
-    document.getElementById("handbagName").textContent = handbagsContent.name;
+    document.getElementById("handbagName").textContent = handbag.name;
 
-    document.getElementById("handbagDescriptionMod").textContent = handbagsContent.description;
+    document.getElementById("handbagDescriptionMod").textContent = handbag.description;
 
-    document.getElementById("handbagDetails").textContent = handbagsContent.details;
+// array
+
+    let detailsText = "<li>Details:<li>";
+
+    for(let details of handbag.details){
+        detailsText += "<li>" + details + "</li>";
+    }
+
+    document.getElementById("handbagDetails").innerHTML= detailsText;
 
 }
-
-    
-
-
 
 
 
@@ -243,6 +247,32 @@ function validateForm (e) {
 
 // Event handlers dark mode
 document.getElementById("darkMode").addEventListener("click", hideDarkMode);
+
+//Event handlers for handbag section 
+document.getElementById("goModBut").addEventListener("click", function(){
+    loadHandbagContent(handbagsContent.goMod);
+});
+
+document.getElementById("cherylAnneBut").addEventListener("click", function(){
+    loadHandbagContent(handbagsContent.cherylAnne);
+});
+    
+document.getElementById("amyBut").addEventListener("click", function(){
+    loadHandbagContent(handbagsContent.amy);
+});
+
+document.getElementById("sunBathingBeautiesBut").addEventListener("click", function(){
+    loadHandbagContent(handbagsContent.sunBathingBeauties);
+});
+
+document.getElementById("betsyBut").addEventListener("click", function(){
+    loadHandbagContent(handbagsContent.betsy);
+});
+
+document.getElementById("veryCherryBut").addEventListener("click", function(){
+    loadHandbagContent(handbagsContent.veryCherry);
+});
+
 
 //Event Handler to validate form
 document.getElementById("submitBut").addEventListener("click", validateForm);
