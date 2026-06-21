@@ -51,7 +51,7 @@ let handbagsContent = {
     },
 
     sunBathingBeauties: {
-        photos: "images/sunbathing.jpg",
+        photo: "images/sunbathing.jpg",
         alt: "Wooden pyramid-shaped handbag with an image of pin-up girl's in bathing suites and beaded flowers with a brown background and a bamboo handle",
         name: "Sun Bathing Beauties",
         description: "Ready for the summer? The Sun Bathing Beauties bag is embellished with swarovski crystals.",
@@ -64,7 +64,7 @@ let handbagsContent = {
     },
 
     betsy: {
-        photos: "images/betsy.jpeg",
+        photo: "images/betsy.jpeg",
         name: "Betsy",
         alt: "Wooden pyramid-shaped handbag with an image of pin-up girl's in marching band outfits with a navy blue background and a lucite handle",
         description: "This blue bag is perfect with any outfit and is perfect for your 4th of July accessory. This bag is embellished with swarovski crystals.",
@@ -76,8 +76,8 @@ let handbagsContent = {
         ]
     },
 
-    Verycherry: {
-        photos: "images/verrycherry.jpeg",
+    veryCherry: {
+        photo: "images/verrycherry.jpeg",
         name: "Very Cherry",
         alt:  "Wooden rectangular-shaped handbag painted black with green stems and rhinestones for the cherries and a black beaded handle.",
         description: "Very Cherry was among the most exclusive designs in the Angela Leavitt collection, distinguished by its hand-painted artwork and limited availability.",
@@ -91,7 +91,28 @@ let handbagsContent = {
     }  
 };
 
- 
+// function that will load the handbag content for handbag section 
+function loadhandbagContent() {
+    document.getElementById("handbagImg").src = handbagsContent.photo;
+
+    document.getElementById("handbagImg").alt = handbagsContent.alt;
+    
+    document.getElementById("handbagName").textContent = handbagsContent.name;
+
+    document.getElementById("handbagDescriptionMod").textContent = handbagsContent.description;
+
+    document.getElementById("handbagDetails").textContent = handbagsContent.details;
+
+}
+
+    
+
+
+
+
+
+
+
 
 //Guessing Game
 let game = {
