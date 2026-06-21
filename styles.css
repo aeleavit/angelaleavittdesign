@@ -414,16 +414,18 @@ body.darkMode .buttons button  {
 .form-top input,
 .form-bottom textarea
  {
-    
+    width: 100%;
     box-sizing: border-box;
     padding: .5rem;
 
 }
 
 
+
 #contactForm label[for="comments"] {
     padding: .5rem;
     align-items: center; 
+    max-width: 100%;
 }
  
 #comments {
@@ -468,6 +470,12 @@ button[type="submit"]:hover{
 
 button[type="submit"]:active {
      box-shadow: 0 0 0 #1c1b1b;
+}
+
+#defaultOutput  {
+    display: flex;
+    justify-content: center;  
+    max-width: 1100px;
 }
 
 /* Footer */
