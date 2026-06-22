@@ -114,13 +114,29 @@ function loadHandbagContent(handbag) {
 }
 
 
-
-
-
-
 //Guessing Game
-let game = {
-    winner:{
+
+//create the for-of loop to find numbers in a map.
+let gameMap = new Map();
+
+//hold value of number select
+let currentNumber;
+
+//Display numbers selected by users
+function inputNumbers(){
+    let outputList = document.getElementById("gameResult");
+
+    let output = "";
+}
+
+
+
+
+
+
+    
+let game {
+winner:{
 
     }
 }
