@@ -116,30 +116,46 @@ function loadHandbagContent(handbag) {
 
 //Guessing Game
 
-//create the for-of loop to find numbers in a map.
-let gameMap = new Map();
+// Variables for the guessing game 
+    let gameForm = document.getElementById("inputNumbers");
+    let userGuess = document.getElementById("userGuess");
+    let usersGuess = document.getElementById("usersGuess"); 
+    let gameResult = document.getElementById("gameResult");
 
-//hold value of number select
-let currentNumber;
+//function for game
+function playGame(e) {
+    // prevents from refreshing
+    e.preventDefault(); 
 
-//Display numbers selected by users
-function inputNumbers(){
-    let outputList = document.getElementById("gameResult");
+    // convert from string to number    
+    let guess = parseInt(userGuess.value); 
 
-    let output = "";
-}
-
-
-
-
-
-
+    if (isNaN(guess) || guess < 1 || guess > 10) {
+        gameResult.innerHTML = "Enter a Number Between 1 and 10.";
+        userGuess.innerHTML = " ";
+    }else { //to generate a random number   
+        let randomChoice =  Math.floor(Math.random() * 10 )+ 1;
     
-let game {
-winner:{
+        // to show users output
+        usersGuess.innerHTML = "Your Guess: " + guess;
 
+        if (guess === randomChoice) {
+            gameResult.innerHTML = "Winning Number: " + randomChoice + "<br>You won!";
+
+        }else {
+            gameResult.innerHTML = "Winning Number: " + randomChoice + "<br>Please try again.";
+        }
     }
 }
+
+
+
+
+
+
+
+
+ 
 
 
 
@@ -292,3 +308,6 @@ document.getElementById("veryCherryBut").addEventListener("click", function(){
 
 //Event Handler to validate form
 document.getElementById("submitBut").addEventListener("click", validateForm);
+
+//Event Handlers for the game form submit button
+gameForm.addEventListener("submit", playGame);
