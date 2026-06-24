@@ -434,8 +434,9 @@ body.darkMode .buttons button  {
 #comments {
     width: 100%;
     box-sizing: border-box;
-    padding: 1.67rem;
+    padding: .5rem;
     margin: auto;
+    line-height: 1.5;
 
 }
 
